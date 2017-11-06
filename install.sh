@@ -1,3 +1,3 @@
 #!/bin/bash
 
-# install all or any one
+# todo: install all or any one
