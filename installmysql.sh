@@ -2,7 +2,7 @@
 iyum update -y 
 cd `dirname $0`
 name="mysql57-community-release-el7-11.noarch.rpm"
-yum install python-devel mysql-community-devel -y
+# yum install python-devel mysql-community-devel -y #python lib
 
 if [ ! -f ${name} ];then
 wget "https://repo.mysql.com//${name}"
@@ -17,8 +17,9 @@ sudo rpm -ivh ${name}
 echo "y" | sudo yum -y update &&
 echo "y" | sudo yum -y install mysql-server &&
 sudo systemctl start mysqld &&
+
+echo "if use python, you need execute: yum install python-devel mysql-community-devel -y"
 rm ${name}
 sudo grep 'temporary password' /var/log/mysqld.log
+
 fi
-
-
