@@ -40,7 +40,7 @@ update(){
 update
 
 install(){
-	${aptyum} install $1	
+	echo "y" | ${aptyum} install $1	-y
 }
 
 Installation_git(){
