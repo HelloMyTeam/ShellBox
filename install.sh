@@ -27,17 +27,33 @@ update(){
 		yum update
 		aptyum=yum
 # 		yum install -y vim git 
+
 	else
 		apt update
 # 		apt-get install -y vim git
 		aptyum=apt
-
 	fi
-	export ${aptyum}
+}
+
+update
+
+install(){
+	${aptyum} install $1	
 }
 
 Installation_git(){
- 
+	install git
 }
-update
-check_sys 
+
+Installation_pip(){
+	install pip
+}
+
+if [ $1 -eq "pip" ];then
+	Installation_pip
+fi
+
+# echo ${aptyum}
+# check_sys 
+
+# aptyum
