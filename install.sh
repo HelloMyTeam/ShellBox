@@ -20,3 +20,5 @@ check_sys(){
     fi
 	bit=`uname -m`
 }
+
+echo check_sys
