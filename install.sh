@@ -22,6 +22,8 @@ check_sys(){
 	bit=`uname -m`
 }
 
+check_sys
+
 update(){
 	if [[ ${release} = "centos" ]]; then
 		yum update
