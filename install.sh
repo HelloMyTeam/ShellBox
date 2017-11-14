@@ -46,7 +46,7 @@ Installation_git(){
 }
 
 Installation_pip(){
-	install pip
+	install python-pip
 }
 
 if [ $1 -eq "pip" ];then
