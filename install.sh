@@ -5,6 +5,7 @@
 check_sys(){
 	if [[ -f /etc/redhat-release ]]; then
 		release="centos"
+		
 	elif cat /etc/issue | grep -q -E -i "debian"; then
 		release="debian"
 	elif cat /etc/issue | grep -q -E -i "ubuntu"; then
@@ -21,4 +22,22 @@ check_sys(){
 	bit=`uname -m`
 }
 
-echo check_sys
+update(){
+	if [[ ${release} = "centos" ]]; then
+		yum update
+		aptyum=yum
+# 		yum install -y vim git 
+	else
+		apt update
+# 		apt-get install -y vim git
+		aptyum=apt
+
+	fi
+	export ${aptyum}
+}
+
+Installation_git(){
+ 
+}
+update
+check_sys 
