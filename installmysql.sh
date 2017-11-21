@@ -5,7 +5,7 @@ name="mysql57-community-release-el7-11.noarch.rpm"
 # yum install python-devel mysql-community-devel -y #python lib
 
 if [ ! -f ${name} ];then
-wget "https://repo.mysql.com//${name}"
+curl -O "https://repo.mysql.com//${name}"
 fi
 
 MD5="c070b754ce2de9f714ab4db4736c7e05"
