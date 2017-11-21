@@ -1,5 +1,5 @@
 #!/bin/bash
-iyum update -y 
+yum update -y 
 cd `dirname $0`
 name="mysql57-community-release-el7-11.noarch.rpm"
 # yum install python-devel mysql-community-devel -y #python lib
