@@ -1,7 +1,7 @@
 # 安装依赖
 yum -y install yum-utils
 yum-config-manager --add-repo http://www.nasm.us/nasm.repo
-yum install autoconf automake bzip2 cmake freetype-devel gcc gcc-c++ git libtool make mercurial nasm pkgconfig zlib-devel
+yum install autoconf automake bzip2 cmake freetype-devel gcc gcc-c++ git libtool make mercurial nasm pkgconfig zlib-devel -y
 if [ ! -d ~/ffmpeg_sources ];then
   mkdir ~/ffmpeg_sources
 fi
