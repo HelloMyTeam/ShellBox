@@ -67,6 +67,5 @@ if [[ $? != 0 ]];then
     fi
 fi
 
-if [[ $? == 0 ]];then
 setup_env
-fi
+
