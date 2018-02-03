@@ -66,6 +66,6 @@ if [[ $? != 0 ]];then
 	    echo "Other OS: $sysOS"
     fi
 fi
-
+if [[ $? == 0 ]];then
 setup_env
-
+fi
