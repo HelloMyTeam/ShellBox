@@ -1,14 +1,16 @@
 # Shell 日常使用脚本
 
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/hello--world/Shell/master/install.sh)"
+curl -L https://raw.githubusercontent.com/hello--world/Shell/master/python3env.sh | bash
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/hello--world/Shell/master/installzsh.sh)"
+curl -L https://raw.githubusercontent.com/hello--world/Shell/master/install.sh | bash
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/hello--world/Shell/master/installtor.sh)"
+curl -L https://raw.githubusercontent.com/hello--world/Shell/master/installzsh.sh | bash
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/hello--world/Shell/master/installmysql.sh)"
+curl -L https://raw.githubusercontent.com/hello--world/Shell/master/installtor.sh | bash
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/hello--world/Shell/master/installENV.sh)"
+curl -L https://raw.githubusercontent.com/hello--world/Shell/master/installmysql.sh | bash
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/hello--world/Shell/master/installscrapy.sh)"
+curl -L https://raw.githubusercontent.com/hello--world/Shell/master/installENV.sh | bash
+
+curl -L https://raw.githubusercontent.com/hello--world/Shell/master/installscrapy.sh | bash
