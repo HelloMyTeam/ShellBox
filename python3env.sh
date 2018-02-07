@@ -26,7 +26,7 @@ cd `dirname $0`
 setup_env() {
     which virtualenv
     if [[ $? != 0 ]];then
-        pip3 install virtualenv
+        pip install virtualenv
     fi
     if [[ ! -d .env ]];then
         virtualenv --no-site-packages -p python3 .env
@@ -49,7 +49,7 @@ if [[ $? != 0 ]];then
     elif [ $sysOS == "Linux" ];then
         cd /tmp && \
         yum groupinstall 'Development Tools' -y && \
-        yum install zlib-devel bzip2-devel openssl-devel ncurese-devel gcc -y 
+        yum install zlib-devel bzip2-devel openssl-devel ncurese-devel gcc python-pip -y 
         if [[ ! -f  Python-3.6.4.tar.xz ]];then
         wget https://www.python.org/ftp/python/3.6.4/Python-3.6.4.tar.xz 
         fi
