@@ -66,6 +66,9 @@ if [[ $? != 0 ]];then
 	    echo "Other OS: $sysOS"
     fi
 fi
+
+which python3
+
 if [[ $? == 0 ]];then
 setup_env
 fi
