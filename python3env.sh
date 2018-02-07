@@ -24,6 +24,9 @@ cd `dirname $0`
 # }
 
 setup_env() {
+
+cd `dirname $0`
+
     which virtualenv
     if [[ $? != 0 ]];then
         pip install virtualenv
