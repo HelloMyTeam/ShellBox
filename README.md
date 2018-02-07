@@ -1,5 +1,6 @@
 # Shell 日常使用脚本
 
+curl -L https://raw.githubusercontent.com/hello--world/Shell/master/zsh.sh | sh
 
 curl -L https://raw.githubusercontent.com/hello--world/Shell/master/python3env.sh | bash
 
