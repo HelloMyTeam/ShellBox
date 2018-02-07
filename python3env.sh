@@ -26,13 +26,13 @@ cd `dirname $0`
 setup_env() {
     which virtualenv
     if [[ $? != 0 ]];then
-        pip install virtualenv
+        pip3 install virtualenv
     fi
     if [[ ! -d .env ]];then
         virtualenv --no-site-packages -p python3 .env
     fi
 
-    source .env/bin/activate
+    source .env/bin/activate && \
     pip3 install -r requirements.txt
 }
 
