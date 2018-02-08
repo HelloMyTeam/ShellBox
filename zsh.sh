@@ -9,6 +9,7 @@ if [ $sysOS == "Darwin" ];then
         fi
     elif [ $sysOS == "Linux" ];then
         curl -L https://raw.githubusercontent.com/hello--world/Shell/master/installzsh.sh | sh
-	sed -i 's/robbyrussell/af-magic/g' ~/.zshrc && source ~/.zshrc    else
-	    echo "Other OS: $sysOS"
+	sed -i 's/robbyrussell/af-magic/g' ~/.zshrc && source ~/.zshrc   
+    else
+	echo "Other OS: $sysOS"
     fi
