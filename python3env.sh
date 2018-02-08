@@ -25,8 +25,6 @@ cd `dirname $0`
 
 setup_env() {
 
-cd `dirname $0`
-
     which virtualenv
     if [[ $? != 0 ]];then
         pip install virtualenv
@@ -69,6 +67,7 @@ if [[ $? != 0 ]];then
 	    echo "Other OS: $sysOS"
     fi
 fi
+cd `dirname $0`
 
 which python3
 
