@@ -13,7 +13,7 @@ elif [ $sysOS == "Linux" ];then
     yum install git -y && \
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     echo "sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="af-magic"/g' ~/.zshrc && source ~/.zshrc"
-	bash -c  "sed -i 's/robbyrussell/af-magic/g' ~/.zshrc && source ~/.zshrc"
+	zsh -c  "sed -i 's/robbyrussell/af-magic/g' ~/.zshrc && source ~/.zshrc"
 else
 	echo "Other OS: $sysOS"
 fi
